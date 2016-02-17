@@ -47,3 +47,4 @@ addding a new gulp task (Example copying the font file)
    alter tavively you can as well add task directly in gulp.ts and call the same in "build.prod" task
   
 
+Edited directly on github
