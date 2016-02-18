@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+//import {statelist} from '../../services/statelist.ts';
 import {MATERIAL_DIRECTIVES} from 'ng2-material/all';
 @Component({
   selector : '/query',
@@ -15,4 +16,7 @@ export class QueryCmp {
       return {abbrev: state};
   })  */
 
+//  constructor(public statelist) {
+//    console.log(statelist + 'query.ts constructor');
+//  }
 }
