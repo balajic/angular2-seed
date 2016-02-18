@@ -47,3 +47,8 @@ addding a new gulp task (Example copying the font file)
    alter tavively you can as well add task directly in gulp.ts and call the same in "build.prod" task
   
 
+=======================================================================================================================================
+KDB Queries
+=======================================================================================================================================
+** State table preparation
+http://108.35.124.68:5001/?state:`state xasc select distinct state:Physician_Profile_State from PRFL
