@@ -46,6 +46,11 @@ addding a new gulp task (Example copying the font file)
    create a file like build.prod.font.ts under tools\tasks and call the same in gulp "build.prod" task sequence.
    alter tavively you can as well add task directly in gulp.ts and call the same in "build.prod" task
   
+  
+ fixing build bug with ng2.beta 6
+ https://github.com/angular/angular/issues/7001
+ angular2/src/facade/async.js
+ line 11: var fromPromise_1 = require('rxjs/observable/PromiseObservable');  
 
 =======================================================================================================================================
 KDB Queries
