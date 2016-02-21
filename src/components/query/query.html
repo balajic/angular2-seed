@@ -3,8 +3,13 @@
           <md-container class="md-block" flex-gt-sm>
             <label>State</label>
             <select>
-              <option *ngFor="#state of states" [value]="state">
-                {{state}}
-              </option>
+              <option *ngFor="#state of states" [value]="state">{{state}}</option>
             </select>
           </md-container>
+
+          <md-container2 class="md-block" flex-gt-sm>
+            <label>RxJs State</label>
+            <select>
+              <option *ngFor="#stateObj of stateArr" [value]="stateObj.state">{{stateObj.state}}</option>
+            </select>
+          </md-container2>

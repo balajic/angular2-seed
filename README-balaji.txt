@@ -57,3 +57,16 @@ KDB Queries
 =======================================================================================================================================
 ** State table preparation
 http://108.35.124.68:5001/?state:`state xasc select distinct state:Physician_Profile_State from PRFL
+
+
+=======================================================================================================================================
+Creating Service that connects to KDB
+=======================================================================================================================================
+Create a Service class and import Http, Injectable as well as RxJs map
+  Add the member function which access the Web service and return http.get.map() in it. Let the Component subscribe to it
+
+Go back to main.ts/bootstrap.ts Import HTTP_PROVIDERS, ServiceClass and add pass it to the bootstarp function
+
+In the Component class, just import the Service Class and inject it to the constructor.
+  Subscribe to the Service class memeber function which retunrs the Observable and assign the output to a Data Model in the Component Class
+  Just use the data model in the Component HTML

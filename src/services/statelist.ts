@@ -1,25 +1,18 @@
 import {Injectable} from 'angular2/core';
 import {Http} from 'angular2/http';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 
 export class StateList {
 
-  states: Object[];
+  // Inject the Http object here
   constructor(public http:Http) {
-    http.get('http://108.35.124.68:5001/.jxo?state')
-    .map(res => res.json())
-    .subscribe( res => this.states = res
-          , err => console.log('Error while retriving states:' + err)
-     );
   }
 
+  // Memeber function returs the json Observable and Component consumes it should subscribe to it
   getStates(): any {
     return this.http.get('http://108.35.124.68:5001/.jxo?state')
-    .map(res => res.json())
-    .subscribe(
-      res => console.log(res),
-      err => console.log('couldn\'t connect!')
-     );
+    .map(res => res.json()); // This just convert the result into the JSON object.
   }
 }
